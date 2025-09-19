@@ -18,9 +18,6 @@
     /* Background Decoration */
 
       .bg {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin: 0;
         padding: 20px;
         background: linear-gradient(135deg, #9b4dff, #d76dff) no-repeat left top, #f9f9fb;
@@ -332,6 +329,31 @@
 
       .text-section {
         max-width: 100%;
+      }
+    }
+
+    @media (min-width: 961px) and (max-width: 1200px) {
+
+      .bg {
+        width: 20vw;
+        height: 65vh;
+        border-bottom-left-radius: 50% 50%;
+        border-bottom-right-radius: 50% 50%;
+      }
+
+      .container {
+        flex-direction: row;
+      }
+      
+      .text-section h1,
+      .text-section p {
+        text-align: left;
+        width: 80%;
+        margin: 0;
+      }
+
+      .text-section {
+        max-width: 60%;
       }
     }
 
